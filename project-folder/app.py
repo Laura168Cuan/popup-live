@@ -23,3 +23,7 @@ def fixtures_today():
         return jsonify(res.json())
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+# 🟢 INI PENTING UNTUK MENJALANKAN APP
+if __name__ == "__main__":
+    app.run(debug=True)
