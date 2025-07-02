@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Score LapakCuan</title>
+</head>
+<body>
+  <h1>Live Score Hari Ini</h1>
+  <div id="matches">Loading...</div>
+
+  <script>
+    async function loadMatches() {
+      const res = await fetch("/fixtures/today");
+      const data = await res.json();
+      const container = document.getElementById("matches");
+
+      if (data.response && data.response.length > 0) {
+        container.innerHTML = data.response.map(match => `
+          <div><strong>${match.teams.home.name}</strong> vs <strong>${match.teams.away.name}</strong> (${match.league.name})</div>
+        `).join("");
+      } else {
+        container.innerText = "Tidak ada pertandingan hari ini.";
+      }
+    }
+
+    loadMatches();
+  </script>
+</body>
+</html>
