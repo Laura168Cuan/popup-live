@@ -1,30 +1,262 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Live Score LapakCuan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="LAPAKCUAN adalah situs tempat game online para bettor mengadu nasib untuk mendapatkan kemenangan yang memuaskan , dengan begitu sudah pastinya LAPAK CUAN memberikan permainan  online yang mudah bisa di capai kemenangan dengan bermodalkan uang sedikit tapi bisa mejadi banyak."/>
+    <meta name="keywords" content="lapakcuan, lapakcuan168, lapak cuan, lapak cuan168, lapakcuan slot, lapakcuan168 slot, cuan168, lapak cuan slot, lapak cuan168 slot, lapakcuan login, lapakcuan168 login, situs lapakcuan, situs lapakcuan168, sbo bet, sbobet, cmd, cmd365, saba, saba sports, handicap, over under, prediksi, parlay, mixparlay, live score" />
+    <meta content="index,follow" name="googlebot" />
+    <meta name="robots" content="index,follow" />
+    <meta name="google-site-verification" content="kzUjfZ7CNnj2iU5neQPW95ivXH90EG2l1oZ9WN9uqT0" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="id" name="language" />
+    <meta content="id" name="geo.country" />
+    <meta http-equiv="content-language" content="In-Id" />
+    <meta content="Indonesia" name="geo.placename" />
+    <meta content="website" property="og:type" />
+    <meta content="Lapakcuan Sportsbook - Situs Games Online dengan Hadiah Besar" property="og:title" />
+    <meta property="og:url" content="https://livescore-lc168.onrender.com/" />
+    <meta property="og:site_name" content="Lapakcuan Sportsbook" />
+    <meta property="og:author" content="Lapakcuan Sportsbook" />
+    <title>LAPAKCUAN - Situs Resmi Sportsbook Terbaik dan Terbesar se-Asia </title>
+    <link rel="canonical" href="https://livescore-lc168.onrender.com/" />
+    <link rel="shortcut icon" href="https://iili.io/JWi1YBa.md.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1593093663025-8dc7dfb9f4d7');
+      background-size: cover;
+      background-position: center;
+      height: 180px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+    header img {
+      height: 80px;
+    }
+    .auth-links {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+    .auth-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      background: rgba(0,0,0,0.5);
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+    .datetime {
+      text-align: center;
+      margin: 20px 0 10px;
+      font-size: 1.1em;
+    }
+    .refresh-btn {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .refresh-btn button {
+      padding: 8px 20px;
+      font-size: 1em;
+      background: #1e88e5;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+    }
+    .leagues {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px 20px 100px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .league-column {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 10px;
+      border: 1px solid #333;
+    }
+    .league-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .league-title img {
+      height: 20px;
+    }
+    .match {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding: 8px;
+      background-color: #2a2a2a;
+      border-radius: 6px;
+    }
+    .match-time {
+      width: 60px;
+      text-align: center;
+      font-size: 0.8em;
+      color: #bbb;
+      line-height: 1.2em;
+      flex-shrink: 0;
+    }
+    .teams {
+      flex: 1;
+    }
+    .score {
+      width: 50px;
+      text-align: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .status {
+      font-size: 0.85em;
+      color: #ccc;
+      text-align: right;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #1e1e1e;
+      color: #ccc;
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+    footer img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Live Score Hari Ini</h1>
-  <div id="matches">Loading...</div>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_2.svg" alt="Logo">
+    <div class="auth-links">
+      <a href="#">Daftar</a>
+      <a href="#">Login</a>
+    </div>
+  </header>
+
+  <div class="datetime" id="datetime">Memuat waktu...</div>
+  <div class="refresh-btn"><button onclick="loadMatches()">🔁 Refresh</button></div>
+  <div class="leagues" id="leagues-container">Memuat pertandingan...</div>
+
+  <footer>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_2.svg" alt="Logo">
+    © 2025 Live Score | <a href="#" style="color:#ccc;">Hubungi Kami</a>
+  </footer>
 
   <script>
-    async function loadMatches() {
-      const res = await fetch("/fixtures/today");
-      const data = await res.json();
-      const container = document.getElementById("matches");
+    // Tampilkan waktu sekarang
+    function updateDateTime() {
+      const dt = new Date();
+      const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      const day = days[dt.getDay()];
+      const date = dt.toLocaleDateString('id-ID');
+      const time = dt.toLocaleTimeString('id-ID');
+      document.getElementById('datetime').textContent = `${day}, ${date} | ${time}`;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
 
-      if (data.response && data.response.length > 0) {
-        container.innerHTML = data.response.map(match => `
-          <div><strong>${match.teams.home.name}</strong> vs <strong>${match.teams.away.name}</strong> (${match.league.name})</div>
-        `).join("");
-      } else {
-        container.innerText = "Tidak ada pertandingan hari ini.";
-      }
+    function loadMatches() {
+      const container = document.getElementById('leagues-container');
+      container.innerHTML = "Memuat pertandingan...";
+
+      fetch('/fixtures/today')
+        .then(res => res.json())
+        .then(data => {
+          container.innerHTML = '';
+          const leagues = {};
+
+          if (!data.response || data.response.length === 0) {
+            container.innerHTML = 'Tidak ada pertandingan hari ini.';
+            return;
+          }
+
+          data.response.forEach(match => {
+            const key = match.league.name + "|" + match.league.country + "|" + (match.league.flag || '');
+            if (!leagues[key]) leagues[key] = [];
+            leagues[key].push(match);
+          });
+
+          Object.keys(leagues).forEach(key => {
+            const [leagueName, country, flag] = key.split('|');
+            const col = document.createElement('div');
+            col.className = 'league-column';
+
+            const flagHTML = flag ? `<img src="${flag}" alt="${country}">` : '';
+            col.innerHTML = `<div class="league-title">${flagHTML} ${leagueName} (${country})</div>`;
+
+            leagues[key].forEach(match => {
+              const m = document.createElement('div');
+              m.className = 'match';
+
+              const dateObj = new Date(match.fixture.date);
+              const timeStr = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+              const dateStr = dateObj.toLocaleDateString('id-ID', { day: '2-digit', month: 'short' });
+
+              const status = match.fixture.status.elapsed ? match.fixture.status.elapsed + "'" : '';
+
+              m.innerHTML = `
+                <div class="match-time">
+                  <div>${timeStr}</div>
+                  <div>${dateStr}</div>
+                </div>
+                <div class="teams">${match.teams.home.name}</div>
+                <div class="score">${match.goals.home !== null ? match.goals.home : '-'}</div>
+                <div class="score">${match.goals.away !== null ? match.goals.away : '-'}</div>
+                <div class="teams" style="text-align:right;">
+                  ${match.teams.away.name}
+                  <div class="status">${status}</div>
+                </div>
+              `;
+              col.appendChild(m);
+            });
+
+            container.appendChild(col);
+          });
+        })
+        .catch(err => {
+          container.textContent = 'Gagal mengambil data pertandingan.';
+          console.error(err);
+        });
     }
 
     loadMatches();
+
   </script>
+
 </body>
 </html>
